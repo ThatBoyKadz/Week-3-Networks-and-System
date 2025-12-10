@@ -1,47 +1,106 @@
-<b>Cybersecurity & Password Management Exercises<b>
+# Password Security and Hashing Python Portfolio
 
+This portfolio documents a set of Python scripts developed to explore password hashing, entropy measurement, and the use of salt and pepper for secure password storage.
 
-this Project showcases practical exercises completed during the course on cybersecurity fundamentals, focusing on password security. 
-The exercises include:
+---
 
-Hashing passwords using different algorithms
-Evaluating password strength using scoring and entropy
-Demonstrating the effect of salt and pepper on password hashing
-Each exercise includes code samples, explanations, and outputs demonstrating the concepts learned.
+## 1. Overview
 
-<b>Hashing Passwords: hashing_demo.py<b> 
+The project contains three scripts designed to demonstrate secure password handling techniques:
 
-<img width="423" height="127" alt="image" src="https://github.com/user-attachments/assets/4b084ed6-b67d-4204-aea1-2ed055ba9044" />
-<img width="420" height="65" alt="image" src="https://github.com/user-attachments/assets/86c0294f-f949-4399-8117-e30e6f4b3635" />
-Explanation:
+1. **hasing_demo.py** – Demonstrates hashing passwords using MD5, SHA256, and bcrypt.
+2. **password_meter.py** – Measures password strength based on length, character variety, and common password checks.
+3. **salt_pepper_demo.py** – Shows the effects of adding salt and pepper to password hashing for improved security.
 
---MD5 and SHA256 provide basic hashing.
---bcrypt includes a salt by default and supports secure verification.
---Demonstrates secure password storage practices.
+This suite is intended for educational purposes in cybersecurity, password management, and hashing techniques.
 
+---
 
+## 2. File Explanations
 
-Outcome: 
-<img width="457" height="101" alt="image" src="https://github.com/user-attachments/assets/eefbb815-416d-48fc-9449-8d35614f2afa" />
+### 2.1 hasing_demo.py
 
+**Purpose:** Demonstrates different hashing algorithms and verifies bcrypt hashes.
 
-<b>Password Strength Meter: password_meter.py<b>
+**Key Features:**
 
-The objective of this code is to evaluate password strength based on length, character diversity, and entropy.
+* Hashes user input with MD5, SHA256, and bcrypt.
+* Shows how to verify a bcrypt hash.
 
-<img width="387" height="265" alt="image" src="https://github.com/user-attachments/assets/bceaea64-7363-4818-b25e-391f88684dec" />
+**Usage:**
 
-This code is the character pools, it counts how many types of characters the password contains: lowercase letters - 26 , uppercase letters - 26 , digits - 10. This adds protection because represents the number of unique characters an attacker might have to guess.
+```
+python hasing_demo.py
+```
 
+*(Insert screenshot showing user input, MD5, SHA256, and bcrypt outputs, including verification)*
 
+---
 
-<b>salt_pepper_demo.py : salt + pepper hashing<b>
+### 2.2 password_meter.py
 
+**Purpose:** Evaluate the strength of passwords and calculate entropy.
 
-<img width="521" height="146" alt="image" src="https://github.com/user-attachments/assets/8c9978c9-e49f-4da2-9e0b-5bf54d60ffce" />
+**Key Features:**
 
+* Scores passwords based on length, character diversity, and common password checks.
+* Calculates estimated entropy of the password.
+* Provides notes on weaknesses.
 
-Pepper - a secrect fixed value added to the password to make it harder for attackers to crack hashes. Pepper is stored securely in code or an environment variable
+**Usage:**
 
-Hash_with_salt_and_pepper; "os.urandom(16)" generates a 16-byte random salt, the password is combined with the salt and pepper: salt + pepper.encode() + pepper. 
-using both salt and pepper greatly increases security, salt ensures each hash is unique, and pepper adds an extra secret layer, protecting against hash leaks.
+```
+python password_meter.py
+```
+
+*(Insert screenshot showing password strength scores, entropy values, and notes for a series of test passwords)*
+
+---
+
+### 2.3 salt_pepper_demo.py
+
+**Purpose:** Demonstrate the security benefits of adding salt and pepper to password hashes.
+
+**Key Features:**
+
+* Shows that identical passwords produce identical hashes without salt.
+* Uses random salt to produce different hashes for the same password.
+* Combines salt and pepper to further improve security.
+
+**Usage:**
+
+```
+python salt_pepper_demo.py
+```
+
+*(Insert screenshot showing outputs for unsalted, salted, and salted+peppered hashes, highlighting the differences)*
+
+---
+
+## 3. Workflow Demonstration
+
+1. **Hashing Demo:** Run `hasing_demo.py` to observe basic hashing and verification techniques.
+2. **Password Strength:** Run `password_meter.py` to assess and score password strength.
+3. **Salt and Pepper:** Run `salt_pepper_demo.py` to understand the effects of salt and pepper on hash uniqueness.
+
+*(Insert a series of screenshots showing the workflow from hashing to strength measurement to salt and pepper demonstration.)*
+
+---
+
+## 4. Conclusion
+
+This collection of scripts provides a practical introduction to password security:
+
+* Hashing with MD5, SHA256, and bcrypt.
+* Evaluating password strength and entropy.
+* Enhancing password security using salt and pepper.
+
+It is suitable for:
+
+* Learning secure password storage techniques.
+* Understanding the differences between hash algorithms.
+* Exploring methods to prevent hash collisions and dictionary attacks.
+
+---
+
+*(Add all relevant screenshots where indicated to complete the portfolio.)*
