@@ -33,7 +33,8 @@ This suite is intended for educational purposes in cybersecurity, password manag
 python hasing_demo.py
 ```
 
-*(Insert screenshot showing user input, MD5, SHA256, and bcrypt outputs, including verification)*
+<img width="1789" height="137" alt="image" src="https://github.com/user-attachments/assets/fea157bb-ab5b-420d-a066-150a84fa7522" />
+
 
 ---
 
@@ -53,7 +54,8 @@ python hasing_demo.py
 python password_meter.py
 ```
 
-*(Insert screenshot showing password strength scores, entropy values, and notes for a series of test passwords)*
+<img width="1788" height="181" alt="image" src="https://github.com/user-attachments/assets/37d99e9b-e38a-4d7d-834d-d24e972cabf0" />
+
 
 ---
 
@@ -73,7 +75,8 @@ python password_meter.py
 python salt_pepper_demo.py
 ```
 
-*(Insert screenshot showing outputs for unsalted, salted, and salted+peppered hashes, highlighting the differences)*
+<img width="1881" height="247" alt="image" src="https://github.com/user-attachments/assets/ce6cdbc1-9952-4f1e-bf07-451ddc8a8d45" />
+
 
 ---
 
@@ -83,7 +86,6 @@ python salt_pepper_demo.py
 2. **Password Strength:** Run `password_meter.py` to assess and score password strength.
 3. **Salt and Pepper:** Run `salt_pepper_demo.py` to understand the effects of salt and pepper on hash uniqueness.
 
-*(Insert a series of screenshots showing the workflow from hashing to strength measurement to salt and pepper demonstration.)*
 
 ---
 
@@ -103,4 +105,3 @@ It is suitable for:
 
 ---
 
-*(Add all relevant screenshots where indicated to complete the portfolio.)*
